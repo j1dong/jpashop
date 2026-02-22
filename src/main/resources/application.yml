@@ -14,4 +14,4 @@ spring:
         format_sql: true
 
 logging.level:
-    org.hibernate.SQL: debug #logger을 통해 하이버네이트 실행 SQL을 남김
+  org.hibernate.SQL: debug #logger을 통해 하이버네이트 실행 SQL을 남김

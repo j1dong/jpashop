@@ -15,9 +15,9 @@ public class ItemRepository { //Item을 DB에 저장 및 조회하는 역할의 
 
     public void save(Item item) {
         if (item.getId() == null) { //id가 null이면,
-            em.persist(item); //아직 저장이 안 된 새로운 객체 -> DB에 삽입됨
+            em.persist(item); //아직 저장이 안 된 새로운 객체 -> persist() 실행
         } else { //id가 이미 있으면,
-            em.merge(item); //기존 객체를 수정
+            em.merge(item); //기존 객체 -> merge() 실행
         }
     }
 
